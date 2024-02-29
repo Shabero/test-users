@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap');
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.users-container {
+    display: grid; /* Изменено на grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Динамический grid с 2 колонками */
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 3px solid #000000;
+    padding-bottom: 10px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.options {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+
+#sort-select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#fetch-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #116215;
+    transition: 0.6s;
+}
+
+.user-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);}
+
+.user-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale3d(  1.1, 1.1, 1.1 );
+    transition: 0.6s;
+}
+
+
+
+@media (max-width:768px) {
+    .options {
+        flex-direction: column;
+    }
+
+}

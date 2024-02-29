@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Information</h1>
+            <div class="options">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="name">Name</option>
+                    <option value="email">Email</option>
+                </select>
+                <input type="text" id="filter-input" placeholder="Filter by name or email...">
+                <button id="refresh-button">Refresh</button>
+            </div>
+        <div id="users-list" class="users-container"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
